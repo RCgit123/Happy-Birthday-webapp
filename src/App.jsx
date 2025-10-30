@@ -26,7 +26,7 @@ export default function App() {
     <div className="min-h-screen overflow-hidden relative">
       {/* Background Music */}
       <audio ref={audioRef} loop>
-        <source src="https://cdn.pixabay.com/audio/2022/03/23/audio_4c1d6cf9ae.mp3" type="audio/mpeg" />
+        <source src="https://cdn.pixabay.com/audio/2025/06/09/audio_50b8be7252.mp3" type="audio/mpeg" />
       </audio>
 
       {/* Music Control */}
