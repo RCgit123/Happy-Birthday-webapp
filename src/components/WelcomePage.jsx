@@ -4,9 +4,9 @@ import { Heart } from 'lucide-react';
 export default function WelcomePage({ onContinue }) {
   // Image paths - these will be your actual photos
   const images = [
-    '/images/photo1.jpg',
-    '/images/photo2.jpg',
-    '/images/photo3.jpg'
+    '/images/photo1.jpeg',
+    '/images/photo2.jpeg',
+    '/images/photo3.jpeg'
   ];
 
   return (
