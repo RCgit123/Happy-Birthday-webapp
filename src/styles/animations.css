@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes gradient {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0) rotate(0deg); 
+    opacity: 0.3; 
+  }
+  50% { 
+    transform: translateY(-30px) rotate(180deg); 
+    opacity: 0.6; 
+  }
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0; 
+    transform: translateY(20px); 
+  }
+  to { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { 
+    opacity: 0; 
+    transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(0) scale(0); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: translate(-50%, -50%) rotate(var(--rotation)) translateY(-150px) scale(1); 
+  }
+}
+
+@keyframes flicker {
+  0%, 100% { 
+    transform: scale(1) translateY(0); 
+  }
+  50% { 
+    transform: scale(1.1) translateY(-2px); 
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+.animate-float {
+  animation: float ease-in-out infinite;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-sparkle {
+  animation: sparkle 2s ease-out infinite;
+}
+
+.animate-flicker {
+  animation: flicker 1.5s ease-in-out infinite;
+}
