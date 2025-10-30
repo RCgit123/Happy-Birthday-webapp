@@ -37,7 +37,7 @@ export default function CakePage({ customMessage, setCustomMessage, onBack }) {
         {/* Back Button */}
         <button
           onClick={onBack}
-          className="mt-8 px-8 py-3 bg-white/20 backdrop-blur-md text-white font-bold rounded-full hover:bg-white/30 transition-all duration-300 shadow-lg"
+          className="mt-8 px-6 sm:px-8 py-3 bg-white/20 backdrop-blur-md text-white font-bold rounded-full hover:bg-white/30 transition-all duration-300 shadow-lg"
         >
           ← Back to Birthday Wishes
         </button>
